@@ -1,0 +1,71 @@
+﻿node.exe : ΓÜá Warning: Next.js 
+inferred your workspace root, but 
+it may not be correct.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSp 
+   ecified: (ΓÜá Warning: Ne...not  
+   be correct.:String) [], Remote   
+ Exception
+    + FullyQualifiedErrorId : Nativ 
+   eCommandError
+ 
+ We detected multiple lockfiles and 
+selected the directory of 
+C:\Users\admin\package-lock.json as 
+the root directory.
+ To silence this warning, set 
+`turbopack.root` in your Next.js 
+config, or consider removing one of 
+the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/a
+pi-reference/config/next-config-js/t
+urbopack#root-directory for more 
+information.
+ Detected additional lockfiles: 
+   * C:\Users\admin\Desktop\my proje
+cts\stitch_cinematic_video_editor_po
+rtfolio\app-build\package-lock.json
+
+Γû▓ Next.js 16.2.4 (Turbopack)
+- Environments: .env.local
+
+ΓÜá The "middleware" file 
+convention is deprecated. Please 
+use "proxy" instead. Learn more: htt
+ps://nextjs.org/docs/messages/middle
+ware-to-proxy
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 6.0s
+  Running TypeScript ...
+  Finished TypeScript in 7.3s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/9) ...
+  Generating static pages using 7 workers (2/9) 
+  Generating static pages using 7 workers (4/9) 
+  Generating static pages using 7 workers (6/9) 
+Γ£ô Generating static pages using 7 workers (9/9) in 1592ms
+  Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ Γùï /admin
+Γö£ Γùï /admin/login
+Γö£ Γùï /admin/videos
+Γö£ ╞Æ /admin/videos/[id]/edit
+Γö£ Γùï /admin/videos/new
+Γö£ ╞Æ /api/auth/[...nextauth]
+Γö£ ╞Æ /api/videos
+Γöö ╞Æ /api/videos/[id]
+
+
+╞Æ Proxy (Middleware)
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+

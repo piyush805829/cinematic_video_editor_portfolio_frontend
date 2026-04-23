@@ -1,0 +1,73 @@
+﻿node.exe : ΓÜá Warning: Next.js 
+inferred your workspace root, but 
+it may not be correct.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSp 
+   ecified: (ΓÜá Warning: Ne...not  
+   be correct.:String) [], Remote   
+ Exception
+    + FullyQualifiedErrorId : Nativ 
+   eCommandError
+ 
+ We detected multiple lockfiles and 
+selected the directory of 
+C:\Users\admin\package-lock.json as 
+the root directory.
+ To silence this warning, set 
+`turbopack.root` in your Next.js 
+config, or consider removing one of 
+the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/a
+pi-reference/config/next-config-js/t
+urbopack#root-directory for more 
+information.
+ Detected additional lockfiles: 
+   * C:\Users\admin\Desktop\my proje
+cts\stitch_cinematic_video_editor_po
+rtfolio\app-build\package-lock.json
+
+Γû▓ Next.js 16.2.4 (Turbopack)
+- Environments: .env.local
+
+ΓÜá The "middleware" file 
+convention is deprecated. Please 
+use "proxy" instead. Learn more: htt
+ps://nextjs.org/docs/messages/middle
+ware-to-proxy
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 6.4s
+  Running TypeScript ...
+Failed to type check.
+
+./src/models/Video.ts:3:18
+Type error: Interface 'IVideo' 
+incorrectly extends interface 
+'Document<ObjectId, any, any, 
+Record<string, any>, {}>'.
+  Types of property '_id' are 
+incompatible.
+    Type 'string' is not assignable 
+to type 'ObjectId'.
+
+  [90m1 |[0m [36mimport[0m 
+mongoose, { [33mSchema[0m, 
+[33mDocument[0m, [33mModel[0m } 
+[36mfrom[0m [32m"mongoose"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m 
+[36mexport[0m [36minterface[0m 
+[33mIVideo[0m [36mextends[0m 
+[33mDocument[0m {
+  [90m  |[0m                  
+[31m[1m^[0m
+  [90m4 |[0m   _id: string;
+  [90m5 |[0m   title: string;
+  [90m6 |[0m   description: 
+string;
+Next.js build worker exited with 
+code: 1 and signal: null

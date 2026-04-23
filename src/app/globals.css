@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* ─── COLOR TOKENS (from DESIGN.md "Cinematic Frame") ─── */
+  --color-surface-dim: #0e0e0e;
+  --color-primary: #99f7ff;
+  --color-inverse-primary: #006a70;
+  --color-primary-container: #00f1fe;
+  --color-secondary: #d277ff;
+  --color-secondary-container: #7d01b1;
+  --color-on-surface-variant: #adaaaa;
+  --color-on-primary-container: #00555a;
+  --color-on-primary: #005f64;
+  --color-primary-dim: #00e2ee;
+  --color-outline: #777575;
+  --color-tertiary: #6fb5ff;
+  --color-on-secondary: #380052;
+  --color-error: #ff716c;
+  --color-surface-container-highest: #262626;
+  --color-surface-container-high: #201f1f;
+  --color-surface-tint: #99f7ff;
+  --color-surface-variant: #262626;
+  --color-surface: #0e0e0e;
+  --color-on-surface: #ffffff;
+  --color-background: #0e0e0e;
+  --color-surface-container-low: #131313;
+  --color-surface-container: #1a1919;
+  --color-inverse-surface: #fcf8f8;
+  --color-outline-variant: #494847;
+  --color-on-background: #ffffff;
+  --color-surface-container-lowest: #000000;
+  --color-surface-bright: #2c2c2c;
+
+  /* ─── FONTS ─── */
+  --font-headline: "Manrope", sans-serif;
+  --font-display: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+/* ─── BASE STYLES ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+/* ─── GLOW TEXT ─── */
+.glow-text {
+  text-shadow: 0 0 20px rgba(153, 247, 255, 0.4);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 20px rgba(210, 119, 255, 0.4);
+}
+
+/* ─── GLASS PANEL ─── */
+.glass-panel {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(14, 14, 14, 0.7);
+}
+
+/* ─── REELS SNAP SCROLL ─── */
+.reels-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.reels-container::-webkit-scrollbar {
+  display: none;
+}
+
+.reel-section {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+/* ─── TIMELINE LOADER (from DESIGN.md) ─── */
+@keyframes timeline-load {
+  0% {
+    width: 0%;
+    background: var(--color-secondary);
+  }
+  50% {
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+  }
+  100% {
+    width: 100%;
+    background: var(--color-primary);
+  }
+}
+
+.timeline-loader {
+  height: 3px;
+  border-radius: 2px;
+  animation: timeline-load 1.5s ease-in-out infinite;
+}
+
+/* ─── NEON GLOW BORDER ─── */
+.neon-glow {
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 0 15px rgba(153, 247, 255, 0.4);
+}
+
+/* ─── AMBIENT SHADOW (purple) ─── */
+.ambient-shadow {
+  box-shadow: 0 0 40px rgba(210, 119, 255, 0.06);
+}
+
+.ambient-shadow-hover:hover {
+  box-shadow: 0 0 30px rgba(210, 119, 255, 0.15);
+}
+
+/* ─── GHOST BORDER (accessibility) ─── */
+.ghost-border {
+  border: 1px solid rgba(73, 72, 71, 0.15);
+}
+
+/* ─── INPUT FOCUS NEON ─── */
+.input-neon:focus {
+  border-bottom-color: var(--color-primary);
+  box-shadow: 0 2px 4px rgba(153, 247, 255, 0.3);
+  outline: none;
+}
+
+/* ─── SCROLLBAR GLOBAL HIDE ─── */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─── GRADIENT TEXT ─── */
+.gradient-text {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
