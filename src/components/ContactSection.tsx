@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const contactCards = [
   {
     name: "WhatsApp",
-    href: "https://wa.me/1234567890",
+    href: "https://wa.me/918058296481",
     bgColor: "bg-[#25D366]/10",
     hoverShadow: "hover:shadow-[0_0_30px_rgba(153,247,255,0.15)]",
     icon: (
@@ -16,7 +16,7 @@ const contactCards = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/cinematicedits",
+    href: "https://instagram.com/penguin.7957052",
     bgColor: "bg-[#E4405F]/10",
     hoverShadow: "hover:shadow-[0_0_30px_rgba(210,119,255,0.15)]",
     icon: (
@@ -27,7 +27,7 @@ const contactCards = [
   },
   {
     name: "Email Me",
-    href: "mailto:hello@cinematicedits.com",
+    href: "mailto:sainipiyush5924@gmail.com",
     bgColor: "bg-primary/10",
     hoverShadow: "hover:shadow-[0_0_30px_rgba(153,247,255,0.15)]",
     icon: (
